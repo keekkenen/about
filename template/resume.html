@@ -1,0 +1,250 @@
+<html>
+<head>
+	<style>
+		html * {
+			font-family: Trebuchet MS;
+			font-size: 12px;
+		}
+
+		.name {
+			text-align: left;
+			font-size: 24pt;
+		}
+
+		.position {
+			text-align: left;
+			margin-top: 5px;
+			font-size: 16px;
+			font-weight: bold;
+		}
+
+		.details-title {
+			text-align: center;
+			font-weight: bold;
+			white-space: nowrap;
+		}
+
+		.container {
+			display: grid;
+			grid-gap: 20px;
+			grid-template-columns: auto;
+			grid-template-rows: auto;
+			text-align: justify;
+			text-indent: 20px;
+			margin-top: 40px;
+		}
+
+		.me {
+			display: grid;
+			grid-gap: 20px;
+			grid-template-columns: auto 180px;
+			grid-template-rows: auto
+		}
+
+		.contacts {
+			display: grid;
+			grid-gap: 20px;
+			grid-template-columns: auto auto auto auto;
+			grid-template-rows: auto;
+			text-align: center;
+		}
+
+		.firstColumn {
+			grid-column: 1/2;
+			grid-row: 1/2;
+		}
+
+		.secondColumn {
+			grid-column: 2/2;
+			grid-row: 1/2;
+		}
+
+		.projectEndLine {
+			margin-bottom: 10px;
+			border-bottom: 1px dotted gray;
+		}
+
+		ul {
+			text-indent: 0;
+		}
+
+		img {
+			height: 10px;
+			width: 10px;
+		}
+
+		.border {
+			border: 1px solid black;
+			margin: 20px 0 20px 0;
+		}
+
+		.borderFat {
+			border: 3px solid black;
+			margin: 20px 0 20px 0;
+		}
+
+		.jobInfo {
+			margin-top: 20px;
+			font-weight: bold;
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="border"></div>
+
+<div class="me">
+	<!--  name -->
+	<div class="firstColumn">
+		<div class="name">{Фамилия Имя}</div>
+	</div>
+	<div class="secondColumn">
+		<div class="position">{Позиция}</div>
+		<div class="position">{х лет опыта}</div>
+	</div>
+</div>
+
+<div class="borderFat"></div>
+
+<div class="contacts">
+	<span>
+		<img
+				src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTggMTZzNi01LjY4NiA2LTEwQTYgNiAwIDAgMCAyIDZjMCA0LjMxNCA2IDEwIDYgMTB6bTAtN2EzIDMgMCAxIDEgMC02YTMgMyAwIDAgMSAwIDZ6Ii8+PC9zdmc+" />
+		{Страна, Город}
+	</span>
+	<span>
+	<img
+			src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTYuNjIgMTAuNzljMS40NCAyLjgzIDMuNzYgNS4xNCA2LjU5IDYuNTlsMi4yLTIuMmMuMjctLjI3LjY3LS4zNiAxLjAyLS4yNGMxLjEyLjM3IDIuMzMuNTcgMy41Ny41N2MuNTUgMCAxIC40NSAxIDFWMjBjMCAuNTUtLjQ1IDEtMSAxYy05LjM5IDAtMTctNy42MS0xNy0xN2MwLS41NS40NS0xIDEtMWgzLjVjLjU1IDAgMSAuNDUgMSAxYzAgMS4yNS4yIDIuNDUuNTcgMy41N2MuMTEuMzUuMDMuNzQtLjI1IDEuMDJsLTIuMiAyLjJ6Ii8+PC9zdmc+" />
+	&nbsp;<a href="tel:+71234567890">{+7 (123) 456-7890}</a>
+	</span>
+	<span>
+	<img
+			src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMzIgMzIiPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTI4IDZINGEyIDIgMCAwIDAtMiAydjE2YTIgMiAwIDAgMCAyIDJoMjRhMiAyIDAgMCAwIDItMlY4YTIgMiAwIDAgMC0yLTJabS0yLjIgMkwxNiAxNC43OEw2LjIgOFpNNCAyNFY4LjkxbDExLjQzIDcuOTFhMSAxIDAgMCAwIDEuMTQgMEwyOCA4LjkxVjI0WiIvPjwvc3ZnPg==" />
+	&nbsp;<a href="mailto:mail@mail.ru">{mail@mail.ru}</a>
+	</span>
+	<span>
+	<img
+			src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTguNDgzIDE5Ljc5di0uMDAybC4wMTgtLjA0M0wyMS41IDQuNjI1di0uMDQ4YzAtLjM3Ny0uMTQtLjcwNi0uNDQyLS45MDNjLS4yNjUtLjE3My0uNTctLjE4NS0uNzg0LS4xNjlhMi42ODEgMi42ODEgMCAwIDAtLjU4Ni4xMmEzLjIzIDMuMjMgMCAwIDAtLjI0LjA4OGwtLjAxMy4wMDVsLTE2LjcyIDYuNTU5bC0uMDA1LjAwMmExLjM1MyAxLjM1MyAwIDAgMC0uMTQ5LjA2MWEyLjI3IDIuMjcgMCAwIDAtLjM0MS4xOWMtLjIxNS4xNDgtLjYyNC40OTYtLjU1NSAxLjA0OGMuMDU3LjQ1OC4zNzIuNzQ4LjU4NS44OTlhMi4wNjIgMi4wNjIgMCAwIDAgLjQwMy4yMmwuMDMyLjAxNGwuMDEuMDAzbC4wMDcuMDAzbDIuOTI2Ljk4NWMtLjAxLjE4My4wMDguMzcuMDU3LjU1NWwxLjQ2NSA1LjU1OWExLjUgMS41IDAgMCAwIDIuODM0LjE5NmwyLjI4OC0yLjQ0NmwzLjkyOSAzLjAxMmwuMDU2LjAyNGMuMzU3LjE1Ni42OS4yMDUuOTk1LjE2NGMuMzA1LS4wNDIuNTQ3LS4xNy43MjktLjMxNWExLjc0MiAxLjc0MiAwIDAgMCAuNDktLjYzNWwuMDA4LS4wMTdsLjAwMy0uMDA2bC4wMDEtLjAwM1pNNy4xMzUgMTMuODc1YS4zLjMgMCAwIDEgLjEzLS4zM2w5LjkyMS02LjNzLjU4NC0uMzU1LjU2MyAwYzAgMCAuMTA0LjA2Mi0uMjA5LjM1M2MtLjI5Ni4yNzctNy4wNzEgNi44MTgtNy43NTcgNy40OGEuMjc4LjI3OCAwIDAgMC0uMDc3LjEzNkw4LjYgMTkuNDM0bC0xLjQ2NS01LjU2WiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PC9zdmc+" />
+	&nbsp;<a href="https://telegram.me/yourNick">{@yourNick}</a>
+	</span>
+</div>
+
+<div class="container">
+	<!-- about -->
+	<div>
+		<p style="margin: 2px;">
+			{Развернуто написать: должность, сколько лет опыта,
+			с чем/кем работал, по каким методологиям, что умеешь,
+			какие есть личные достижения.}
+		</p>
+	</div>
+
+	<!-- skils -->
+	<div style="margin-top: 5px;">
+		<div class="details-title">НАВЫКИ</div>
+		<p>
+			{Hard skills - обязательный пункт, указываем словами все технологии,
+			с которыми работали (или знаете). Основные названия языков,
+			фреймворков, СУБД, библиотек и инструментов, методологий.}
+		</p>
+	</div>
+
+	<!--	jobs -->
+	<div style="margin-top: 5px;">
+		<div class="details-title">ОПЫТ</div>
+
+		<!--	job -->
+		<div class="jobInfo">
+			{MM/YYYY - MM/YYYY: Должность, Компания, Город}
+		</div>
+		<div style="margin-top: 10px">
+			<div>
+				{Описать в общих чертах цель проекта, а также можно указать
+				методологию разработки }
+				<p>В ходе работы реализованы кейсы:</p>
+				<ul>
+					<li>это;</li>
+					<li>еще вот это;</li>
+					<li>...;
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div style="font-weight:bold">Стек:</div>
+		<div style="margin-left: 10px">
+			<div>
+				<span style="font-weight:bold">Сервер:</span>
+				...<br>
+			</div>
+			<div>
+				<span style="font-weight:bold">Клиент:</span>
+				...<br>
+			</div>
+			<div>
+				<span style="font-weight:bold">Инструменты:</span>
+				...<br>
+			</div>
+		</div>
+
+		<!--	job -->
+		<p class="projectEndLine"></p>
+
+		<div class="jobInfo">
+			{MM/YYYY - MM/YYYY: Должность, Компания, Город}
+		</div>
+		<div style="margin-top: 10px">
+			<div>
+				{Описать в общих чертах цель проекта, а также можно указать
+				методологию разработки }
+				<p>В ходе работы реализованы кейсы:</p>
+				<ul>
+					<li>это;</li>
+					<li>еще вот это;</li>
+					<li>...;
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div style="font-weight:bold">Стек:</div>
+		<div style="margin-left: 10px">
+			<div>
+				<span style="font-weight:bold">Сервер:</span>
+				...<br>
+			</div>
+			<div>
+				<span style="font-weight:bold">Клиент:</span>
+				...<br>
+			</div>
+			<div>
+				<span style="font-weight:bold">Инструменты:</span>
+				...<br>
+			</div>
+		</div>
+
+		<!-- languages -->
+		<div style="margin-top: 30px;">
+			<div class="details-title">ЯЗЫК</div>
+			<p>
+				{Язык 1 (уровень владения)}
+			</p>
+			<p>
+				{Язык 2 (уровень владения)}
+			</p>
+		</div>
+
+		<!-- education -->
+		<div style="margin-top: 30px;">
+			<div class="details-title">ОБРАЗОВАНИЕ</div>
+			<p>
+				{ВУЗ, Степень, Год окончания}
+			</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
