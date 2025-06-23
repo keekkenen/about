@@ -91,6 +91,45 @@
 		}
 
 	</style>
+	<script>
+		function currentExperienceInYears(start){
+		  var startDate;
+		  if (start instanceof Date){
+		    startDate = start;
+		  } else {
+		    startDate = new Date(start);
+		  }
+		  return betweenTwoDatesInYears(startDate, new Date());
+		}
+		function betweenTwoDatesInYears(start, end){
+		  var startDate;
+		  var now;
+		  if (start instanceof Date){
+		    startDate = start;
+		  } else {
+		    startDate = new Date(start);
+		  }
+		  if (end instanceof Date){
+		    now = end;
+		  } else {
+		    now = new Date(end);
+		  }
+		  var value = Math.round((now.getTime() - startDate.getTime())/1000/60/60/24/365);
+			return value;
+		}
+		function experienceText(start){
+		  var years = currentExperienceInYears(start);
+		  var value = "нет опыта";
+		  if (years == 1 || years == 21){
+		    value = years + " год опыта";
+		  } else if ((years > 1 && years < 5) || years > 21){
+		    value = years + " года опыта";
+		  } else if (years >=5){
+		    value = years + " лет опыта";
+		  }
+			document.write(value);
+		}
+	</script>
 </head>
 <body>
 
@@ -103,7 +142,7 @@
 	</div>
 	<div class="secondColumn">
 		<div class="position">{Позиция}</div>
-		<div class="position">{х лет опыта}</div>
+		<div class="position">{<script>experienceText('2020-01-01')</script>}</div>
 	</div>
 </div>
 
