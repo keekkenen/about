@@ -119,13 +119,13 @@
 		}
 		function experienceText(start){
 		  var years = currentExperienceInYears(start);
-		  var value = "нет опыта";
+		  var value = "нет";
 		  if (years == 1 || years == 21){
-		    value = years + " год опыта";
+		    value = years + " год";
 		  } else if ((years > 1 && years < 5) || years > 21){
-		    value = years + " года опыта";
+		    value = years + " года";
 		  } else if (years >=5){
-		    value = years + " лет опыта";
+		    value = years + " лет";
 		  }
 			document.write(value);
 		}
@@ -142,7 +142,7 @@
 	</div>
 	<div class="secondColumn">
 		<div class="position">{Позиция}</div>
-		<div class="position">{<script>experienceText('2020-01-01')</script>}</div>
+		<div class="position">{<script>experienceText('2020-01-01')</script>} опыта</div>
 	</div>
 </div>
 
@@ -175,7 +175,7 @@
 	<!-- about -->
 	<div>
 		<p style="margin: 2px;">
-			{Развернуто написать: должность, сколько лет опыта,
+			{Развернуто написать: должность, сколько лет,
 			с чем/кем работал, по каким методологиям, что умеешь,
 			какие есть личные достижения.}
 		</p>
